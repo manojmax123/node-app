@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t newproject123 .
+      - docker build -t newproject123  .
       - docker tag newproject123:latest 125571554996.dkr.ecr.us-east-1.amazonaws.com/newproject123:latest     
   post_build:
     commands:
